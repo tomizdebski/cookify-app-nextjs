@@ -1,0 +1,112 @@
+// This is your Prisma schema file,
+// learn more about it in the docs: https://pris.ly/d/prisma-schema
+
+// Looking for ways to speed up your queries, or scale easily with your serverless or edge functions?
+// Try Prisma Accelerate: https://pris.ly/cli/accelerate-init
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+model Follows {
+  following_user_id Int
+  followed_user_id  Int
+  created_at        DateTime
+
+  followingUser User @relation("Following", fields: [following_user_id], references: [id])
+  followedUser  User @relation("Followed", fields: [followed_user_id], references: [id])
+
+  @@id([following_user_id, followed_user_id])
+}
+
+model User {
+  id               Int       @id @default(autoincrement())
+  role_id          Int
+  username         String
+  avatar_img       String?
+  date_of_birth    DateTime?
+  email            String
+  created_at       DateTime
+  hasApprovedTerms Boolean
+  recipes          Recipe[]  @relation("UserRecipes")
+  reviews          Review[]  @relation("UserReviews")
+  following        Follows[] @relation("Following")
+  followed         Follows[] @relation("Followed")
+  role             Role      @relation(fields: [role_id], references: [id])
+}
+
+model Recipe {
+  id           Int                @id @default(autoincrement())
+  user_id      Int
+  dish_id      Int
+  category_id  Int
+  description  String
+  prep_time    Int
+  img_url      String?
+  created_at   DateTime
+  user         User               @relation("UserRecipes", fields: [user_id], references: [id])
+  dish         Dish               @relation(fields: [dish_id], references: [id])
+  category     Category           @relation(fields: [category_id], references: [id])
+  ingredients  RecipeIngredient[]
+  instructions Instruction[]
+  reviews      Review[]
+}
+
+model Role {
+  id    Int    @id @default(autoincrement())
+  type  String
+  users User[]
+}
+
+model Category {
+  id      Int      @id @default(autoincrement())
+  name    String
+  recipes Recipe[]
+}
+
+model Dish {
+  id      Int      @id @default(autoincrement())
+  name    String
+  recipes Recipe[]
+}
+
+model Ingredient {
+  id                Int                @id @default(autoincrement())
+  name              String
+  recipeIngredients RecipeIngredient[]
+}
+
+model Instruction {
+  id          Int    @id @default(autoincrement())
+  recipe_id   Int
+  step_number Int
+  description String
+  recipe      Recipe @relation(fields: [recipe_id], references: [id])
+}
+
+model RecipeIngredient {
+  recipe_id     Int
+  ingredient_id Int
+  amount        Int
+  unit          String
+  recipe        Recipe     @relation(fields: [recipe_id], references: [id])
+  ingredient    Ingredient @relation(fields: [ingredient_id], references: [id])
+
+  @@id([recipe_id, ingredient_id])
+}
+
+model Review {
+  id        Int      @id @default(autoincrement())
+  recipe_id Int
+  user_id   Int
+  comment   String
+  rating    Float
+  date      DateTime
+  recipe    Recipe   @relation(fields: [recipe_id], references: [id])
+  user      User     @relation("UserReviews", fields: [user_id], references: [id])
+}
