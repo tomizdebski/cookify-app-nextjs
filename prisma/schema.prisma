@@ -18,14 +18,14 @@ model Follows {
   followed_user_id  Int
   created_at        DateTime
 
-  followingUser User @relation("Following", fields: [following_user_id], references: [id])
-  followedUser  User @relation("Followed", fields: [followed_user_id], references: [id])
+  followingUser Users @relation("Following", fields: [following_user_id], references: [id])
+  followedUser  Users @relation("Followed", fields: [followed_user_id], references: [id])
 
   @@id([following_user_id, followed_user_id])
 }
 
-model User {
-  id               Int       @id @default(autoincrement())
+model Users {
+  id               Int       @id
   role_id          Int
   username         String
   avatar_img       String?
@@ -33,80 +33,80 @@ model User {
   email            String
   created_at       DateTime
   hasApprovedTerms Boolean
-  recipes          Recipe[]  @relation("UserRecipes")
-  reviews          Review[]  @relation("UserReviews")
+  recipes          Recipes[] @relation("UserRecipes")
+  reviews          Reviews[] @relation("UserReviews")
   following        Follows[] @relation("Following")
   followed         Follows[] @relation("Followed")
-  role             Role      @relation(fields: [role_id], references: [id])
+  role             Roles     @relation(fields: [role_id], references: [id])
 }
 
-model Recipe {
-  id           Int                @id @default(autoincrement())
-  user_id      Int
-  dish_id      Int
-  category_id  Int
-  description  String
-  prep_time    Int
-  img_url      String?
-  created_at   DateTime
-  user         User               @relation("UserRecipes", fields: [user_id], references: [id])
-  dish         Dish               @relation(fields: [dish_id], references: [id])
-  category     Category           @relation(fields: [category_id], references: [id])
-  ingredients  RecipeIngredient[]
-  instructions Instruction[]
-  reviews      Review[]
+model Recipes {
+  id          Int                 @id
+  user_id     Int
+  dish_id     Int
+  category_id Int
+  description String
+  prep_time   Int
+  img_url     String?
+  created_at  DateTime
+  user        Users               @relation("UserRecipes", fields: [user_id], references: [id])
+  dish        Dishes              @relation(fields: [dish_id], references: [id])
+  category    Categories          @relation(fields: [category_id], references: [id])
+  ingredient  RecipeIngredients[]
+  instruction Instructions[]
+  review      Reviews[]
 }
 
-model Role {
-  id    Int    @id @default(autoincrement())
-  type  String
-  users User[]
+model Roles {
+  id   Int     @id
+  type String
+  user Users[]
 }
 
-model Category {
-  id      Int      @id @default(autoincrement())
-  name    String
-  recipes Recipe[]
+model Categories {
+  id     Int       @id
+  name   String
+  recipe Recipes[]
 }
 
-model Dish {
-  id      Int      @id @default(autoincrement())
-  name    String
-  recipes Recipe[]
+model Dishes {
+  id     Int       @id
+  name   String
+  recipe Recipes[]
 }
 
-model Ingredient {
-  id                Int                @id @default(autoincrement())
-  name              String
-  recipeIngredients RecipeIngredient[]
+model Ingredients {
+  id               Int                 @id @default(autoincrement())
+  name             String
+  recipeIngredient RecipeIngredients[]
 }
 
-model Instruction {
-  id          Int    @id @default(autoincrement())
+model Instructions {
+  id          Int     @id
   recipe_id   Int
   step_number Int
   description String
-  recipe      Recipe @relation(fields: [recipe_id], references: [id])
+  recipe      Recipes @relation(fields: [recipe_id], references: [id])
 }
 
-model RecipeIngredient {
+model RecipeIngredients {
   recipe_id     Int
   ingredient_id Int
   amount        Int
   unit          String
-  recipe        Recipe     @relation(fields: [recipe_id], references: [id])
-  ingredient    Ingredient @relation(fields: [ingredient_id], references: [id])
+  recipe        Recipes     @relation(fields: [recipe_id], references: [id])
+  ingredient    Ingredients @relation(fields: [ingredient_id], references: [id])
 
   @@id([recipe_id, ingredient_id])
 }
 
-model Review {
-  id        Int      @id @default(autoincrement())
+model Reviews {
+  id        Int      @id
   recipe_id Int
   user_id   Int
   comment   String
   rating    Float
   date      DateTime
-  recipe    Recipe   @relation(fields: [recipe_id], references: [id])
-  user      User     @relation("UserReviews", fields: [user_id], references: [id])
+  recipe    Recipes  @relation(fields: [recipe_id], references: [id])
+  user      Users    @relation("UserReviews", fields: [user_id], references: [id])
 }

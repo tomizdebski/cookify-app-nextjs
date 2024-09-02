@@ -1,0 +1,194 @@
+[
+  {
+    "id": 1,
+    "recipe_id": 1,
+    "step_number": 1,
+    "description": "Mix flour and sugar."
+  },
+  {
+    "id": 2,
+    "recipe_id": 1,
+    "step_number": 2,
+    "description": "Add eggs and milk."
+  },
+  {
+    "id": 3,
+    "recipe_id": 1,
+    "step_number": 3,
+    "description": "Cook on a hot griddle."
+  },
+  {
+    "id": 4,
+    "recipe_id": 2,
+    "step_number": 1,
+    "description": "Chop vegetables."
+  },
+  {
+    "id": 5,
+    "recipe_id": 2,
+    "step_number": 2,
+    "description": "Mix with dressing."
+  },
+  {
+    "id": 6,
+    "recipe_id": 2,
+    "step_number": 3,
+    "description": "Serve chilled."
+  },
+  {
+    "id": 7,
+    "recipe_id": 3,
+    "step_number": 1,
+    "description": "Prepare dough."
+  },
+  {
+    "id": 8,
+    "recipe_id": 3,
+    "step_number": 2,
+    "description": "Add toppings."
+  },
+  {
+    "id": 9,
+    "recipe_id": 3,
+    "step_number": 3,
+    "description": "Bake until golden."
+  },
+  {
+    "id": 10,
+    "recipe_id": 4,
+    "step_number": 1,
+    "description": "Grill beef patties."
+  },
+  {
+    "id": 11,
+    "recipe_id": 4,
+    "step_number": 2,
+    "description": "Prepare buns."
+  },
+  {
+    "id": 12,
+    "recipe_id": 4,
+    "step_number": 3,
+    "description": "Assemble burger."
+  },
+  {
+    "id": 13,
+    "recipe_id": 5,
+    "step_number": 1,
+    "description": "Cook pasta."
+  },
+  {
+    "id": 14,
+    "recipe_id": 5,
+    "step_number": 2,
+    "description": "Prepare sauce."
+  },
+  {
+    "id": 15,
+    "recipe_id": 5,
+    "step_number": 3,
+    "description": "Combine and serve."
+  },
+  {
+    "id": 16,
+    "recipe_id": 6,
+    "step_number": 1,
+    "description": "Prepare sushi rice."
+  },
+  {
+    "id": 17,
+    "recipe_id": 6,
+    "step_number": 2,
+    "description": "Roll sushi with fillings."
+  },
+  {
+    "id": 18,
+    "recipe_id": 6,
+    "step_number": 3,
+    "description": "Slice and serve."
+  },
+  {
+    "id": 19,
+    "recipe_id": 7,
+    "step_number": 1,
+    "description": "Prepare taco shells."
+  },
+  {
+    "id": 20,
+    "recipe_id": 7,
+    "step_number": 2,
+    "description": "Cook meat filling."
+  },
+  {
+    "id": 21,
+    "recipe_id": 7,
+    "step_number": 3,
+    "description": "Assemble tacos."
+  },
+  {
+    "id": 22,
+    "recipe_id": 8,
+    "step_number": 1,
+    "description": "Chop ingredients."
+  },
+  {
+    "id": 23,
+    "recipe_id": 8,
+    "step_number": 2,
+    "description": "Simmer in broth."
+  },
+  {
+    "id": 24,
+    "recipe_id": 8,
+    "step_number": 3,
+    "description": "Serve hot."
+  },
+  {
+    "id": 25,
+    "recipe_id": 9,
+    "step_number": 1,
+    "description": "Prepare bread."
+  },
+  {
+    "id": 26,
+    "recipe_id": 9,
+    "step_number": 2,
+    "description": "Add fillings."
+  },
+  {
+    "id": 27,
+    "recipe_id": 9,
+    "step_number": 3,
+    "description": "Cut and serve."
+  },
+  {
+    "id": 28,
+    "recipe_id": 10,
+    "step_number": 3,
+    "description": "Rest and serve."
+  },
+  {
+    "id": 29,
+    "recipe_id": 10,
+    "step_number": 2,
+    "description": "Grill to desired doneness."
+  },
+  {
+    "id": 30,
+    "recipe_id": 10,
+    "step_number": 1,
+    "description": "Season steak."
+  },
+  {
+    "id": 31,
+    "recipe_id": 10,
+    "step_number": 2,
+    "description": "Grill to desired doneness."
+  },
+  {
+    "id": 32,
+    "recipe_id": 10,
+    "step_number": 3,
+    "description": "Rest and serve."
+  }
+]

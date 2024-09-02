@@ -1,0 +1,12 @@
+[
+  { "id": 1, "name": "Dessert" },
+  { "id": 2, "name": "Main Course" },
+  { "id": 3, "name": "Appetizer" },
+  { "id": 4, "name": "Snack" },
+  { "id": 5, "name": "Drink" },
+  { "id": 6, "name": "Side Dish" },
+  { "id": 7, "name": "Soup" },
+  { "id": 8, "name": "Salad" },
+  { "id": 9, "name": "Breakfast" },
+  { "id": 10, "name": "Salad" }
+]
