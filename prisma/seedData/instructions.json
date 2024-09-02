@@ -90,101 +90,103 @@
     "description": "Combine and serve."
   },
   {
+    "id": 16,
     "recipe_id": 6,
     "step_number": 1,
     "description": "Prepare sushi rice."
   },
   {
+    "id": 17,
     "recipe_id": 6,
     "step_number": 2,
     "description": "Roll sushi with fillings."
   },
   {
-    "id": 16,
+    "id": 18,
     "recipe_id": 6,
     "step_number": 3,
     "description": "Slice and serve."
   },
   {
-    "id": 17,
+    "id": 19,
     "recipe_id": 7,
     "step_number": 1,
     "description": "Prepare taco shells."
   },
   {
-    "id": 18,
+    "id": 20,
     "recipe_id": 7,
     "step_number": 2,
     "description": "Cook meat filling."
   },
   {
-    "id": 19,
+    "id": 21,
     "recipe_id": 7,
     "step_number": 3,
     "description": "Assemble tacos."
   },
   {
-    "id": 20,
+    "id": 22,
     "recipe_id": 8,
     "step_number": 1,
     "description": "Chop ingredients."
   },
   {
-    "id": 21,
+    "id": 23,
     "recipe_id": 8,
     "step_number": 2,
     "description": "Simmer in broth."
   },
   {
-    "id": 22,
+    "id": 24,
     "recipe_id": 8,
     "step_number": 3,
     "description": "Serve hot."
   },
   {
-    "id": 23,
+    "id": 25,
     "recipe_id": 9,
     "step_number": 1,
     "description": "Prepare bread."
   },
   {
-    "id": 24,
+    "id": 26,
     "recipe_id": 9,
     "step_number": 2,
     "description": "Add fillings."
   },
   {
-    "id": 25,
+    "id": 27,
     "recipe_id": 9,
     "step_number": 3,
     "description": "Cut and serve."
   },
   {
+    "id": 28,
     "recipe_id": 10,
     "step_number": 3,
-    "description": "Rest and serve.",
-    "id": 10
+    "description": "Rest and serve."
   },
   {
-    "id": 26,
+    "id": 29,
     "recipe_id": 10,
     "step_number": 2,
     "description": "Grill to desired doneness."
   },
   {
-    "id": 27,
+    "id": 30,
     "recipe_id": 10,
     "step_number": 1,
     "description": "Season steak."
   },
   {
-    "id": 28,
+    "id": 31,
     "recipe_id": 10,
     "step_number": 2,
     "description": "Grill to desired doneness."
   },
   {
-    "id": 29,
+    "id": 32,
     "recipe_id": 10,
     "step_number": 3,
     "description": "Rest and serve."

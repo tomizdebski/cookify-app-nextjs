@@ -6,6 +6,7 @@ const prisma = new PrismaClient();
 
 async function deleteAllData() {
   const modelNames = [
+    "roles",
     "users",
     "categories",
     "dishes",
@@ -40,6 +41,7 @@ async function seedData() {
   const dataDirectory = path.join(__dirname, "seedData");
 
   const files = [
+    "roles.json",
     "users.json",
     "categories.json",
     "dishes.json",
