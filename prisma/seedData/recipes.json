@@ -1,0 +1,102 @@
+[
+  {
+    "id": 1,
+    "user_id": 2,
+    "dish_id": 2,
+    "category_id": 2,
+    "description": "Delicious Pancakes recipe.",
+    "prep_time": 20,
+    "img_url": "https://example.com/recipe1.jpg",
+    "created_at": "2024-01-01T00:00:00Z"
+  },
+  {
+    "id": 2,
+    "user_id": 2,
+    "dish_id": 2,
+    "category_id": 2,
+    "description": "Fresh Salad recipe.",
+    "prep_time": 15,
+    "img_url": "https://example.com/recipe2.jpg",
+    "created_at": "2024-01-02T00:00:00Z"
+  },
+  {
+    "id": 3,
+    "user_id": 3,
+    "dish_id": 3,
+    "category_id": 3,
+    "description": "Tasty Pizza recipe.",
+    "prep_time": 30,
+    "img_url": "https://example.com/recipe3.jpg",
+    "created_at": "2024-01-03T00:00:00Z"
+  },
+  {
+    "id": 4,
+    "user_id": 4,
+    "dish_id": 4,
+    "category_id": 4,
+    "description": "Juicy Burger recipe.",
+    "prep_time": 25,
+    "img_url": "https://example.com/recipe4.jpg",
+    "created_at": "2024-01-04T00:00:00Z"
+  },
+  {
+    "id": 5,
+    "user_id": 5,
+    "dish_id": 5,
+    "category_id": 5,
+    "description": "Spaghetti Pasta recipe.",
+    "prep_time": 35,
+    "img_url": "https://example.com/recipe5.jpg",
+    "created_at": "2024-01-05T00:00:00Z"
+  },
+  {
+    "id": 6,
+    "user_id": 5,
+    "dish_id": 5,
+    "category_id": 5,
+    "description": "Delicious Sushi recipe.",
+    "prep_time": 40,
+    "img_url": "https://example.com/recipe6.jpg",
+    "created_at": "2024-01-06T00:00:00Z"
+  },
+  {
+    "id": 7,
+    "user_id": 7,
+    "dish_id": 7,
+    "category_id": 7,
+    "description": "Spicy Tacos recipe.",
+    "prep_time": 30,
+    "img_url": "https://example.com/recipe7.jpg",
+    "created_at": "2024-01-07T00:00:00Z"
+  },
+  {
+    "id": 8,
+    "user_id": 8,
+    "dish_id": 8,
+    "category_id": 8,
+    "description": "Hearty Soup recipe.",
+    "prep_time": 25,
+    "img_url": "https://example.com/recipe8.jpg",
+    "created_at": "2024-01-08T00:00:00Z"
+  },
+  {
+    "id": 9,
+    "user_id": 1,
+    "dish_id": 9,
+    "category_id": 9,
+    "description": "Tasty Sandwich recipe.",
+    "prep_time": 20,
+    "img_url": "https://example.com/recipe9.jpg",
+    "created_at": "2024-01-09T00:00:00Z"
+  },
+  {
+    "id": 10,
+    "user_id": 10,
+    "dish_id": 10,
+    "category_id": 10,
+    "description": "Juicy Steak recipe.",
+    "prep_time": 45,
+    "img_url": "https://example.com/recipe10.jpg",
+    "created_at": "2024-01-10T00:00:00Z"
+  }
+]

@@ -1,0 +1,62 @@
+[
+  {
+    "recipe_id": 1,
+    "ingredient_id": 1,
+    "amount": 200,
+    "unit": "grams"
+  },
+  {
+    "recipe_id": 1,
+    "ingredient_id": 2,
+    "amount": 100,
+    "unit": "grams"
+  },
+  {
+    "recipe_id": 2,
+    "ingredient_id": 3,
+    "amount": 50,
+    "unit": "grams"
+  },
+  {
+    "recipe_id": 3,
+    "ingredient_id": 4,
+    "amount": 150,
+    "unit": "grams"
+  },
+  {
+    "recipe_id": 4,
+    "ingredient_id": 5,
+    "amount": 250,
+    "unit": "grams"
+  },
+  {
+    "recipe_id": 5,
+    "ingredient_id": 6,
+    "amount": 200,
+    "unit": "milliliters"
+  },
+  {
+    "recipe_id": 6,
+    "ingredient_id": 7,
+    "amount": 3,
+    "unit": "pieces"
+  },
+  {
+    "recipe_id": 7,
+    "ingredient_id": 8,
+    "amount": 100,
+    "unit": "grams"
+  },
+  {
+    "recipe_id": 8,
+    "ingredient_id": 9,
+    "amount": 75,
+    "unit": "grams"
+  },
+  {
+    "recipe_id": 9,
+    "ingredient_id": 10,
+    "amount": 125,
+    "unit": "grams"
+  }
+]

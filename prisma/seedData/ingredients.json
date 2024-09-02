@@ -1,0 +1,12 @@
+[
+  { "id": 1, "name": "Flour" },
+  { "id": 2, "name": "Sugar" },
+  { "id": 3, "name": "Salt" },
+  { "id": 4, "name": "Pepper" },
+  { "id": 5, "name": "Butter" },
+  { "id": 6, "name": "Milk" },
+  { "id": 7, "name": "Eggs" },
+  { "id": 8, "name": "Tomato" },
+  { "id": 9, "name": "Lettuce" },
+  { "id": 10, "name": "Cheese" }
+]

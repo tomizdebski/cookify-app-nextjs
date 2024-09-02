@@ -1,0 +1,74 @@
+[
+  {
+    "id": 2,
+    "recipe_id": 2,
+    "user_id": 2,
+    "comment": "Fresh and tasty.",
+    "rating": 4,
+    "date": "2024-01-02T12:00:00Z"
+  },
+  {
+    "id": 3,
+    "recipe_id": 3,
+    "user_id": 3,
+    "comment": "Great pizza recipe_id!",
+    "rating": 5,
+    "date": "2024-01-03T12:00:00Z"
+  },
+  {
+    "id": 4,
+    "recipe_id": 4,
+    "user_id": 4,
+    "comment": "Best burger I've ever had.",
+    "rating": 5,
+    "date": "2024-01-04T12:00:00Z"
+  },
+  {
+    "id": 5,
+    "recipe_id": 5,
+    "user_id": 5,
+    "comment": "Delicious pasta, will make again!",
+    "rating": 4,
+    "date": "2024-01-05T12:00:00Z"
+  },
+  {
+    "id": 6,
+    "recipe_id": 6,
+    "user_id": 6,
+    "comment": "Great sushi recipe_id.",
+    "rating": 5,
+    "date": "2024-01-06T12:00:00Z"
+  },
+  {
+    "id": 7,
+    "recipe_id": 7,
+    "user_id": 7,
+    "comment": "Perfect tacos!",
+    "rating": 4,
+    "date": "2024-01-07T12:00:00Z"
+  },
+  {
+    "id": 8,
+    "recipe_id": 8,
+    "user_id": 8,
+    "comment": "Hearty and flavorful soup.",
+    "rating": 4,
+    "date": "2024-01-08T12:00:00Z"
+  },
+  {
+    "id": 9,
+    "recipe_id": 9,
+    "user_id": 9,
+    "comment": "Yummy sandwich.",
+    "rating": 3,
+    "date": "2024-01-09T12:00:00Z"
+  },
+  {
+    "id": 10,
+    "recipe_id": 10,
+    "user_id": 10,
+    "comment": "Amazing steak, cooked to perfection.",
+    "rating": 5,
+    "date": "2024-01-10T12:00:00Z"
+  }
+]

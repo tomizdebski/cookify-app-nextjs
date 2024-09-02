@@ -1,0 +1,21 @@
+[
+  { "name": "Dessert" },
+  { "name": "Main Course" },
+  { "name": "Appetizer" },
+  { "name": "Snack" },
+  { "name": "Drink" },
+  { "name": "Side Dish" },
+  { "name": "Soup" },
+  { "name": "Salad" },
+  { "name": "Breakfast" },
+  { "id": 1, "name": "Brunch" },
+  { "id": 2, "name": "Brunch" },
+  { "id": 3, "name": "Brunch" },
+  { "id": 4, "name": "Brunch" },
+  { "id": 5, "name": "Brunch" },
+  { "id": 6, "name": "Brunch" },
+  { "id": 7, "name": "Brunch" },
+  { "id": 8, "name": "Brunch" },
+  { "id": 9, "name": "Brunch" },
+  { "id": 10, "name": "Brunch" }
+]

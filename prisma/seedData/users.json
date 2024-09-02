@@ -1,0 +1,101 @@
+[
+  {
+    "id": 1,
+    "username": "user1",
+    "avatar_img": "https://example.com/avatar1.jpg",
+    "date_of_birth": "1990-01-01",
+    "email": "user1@example.com",
+    "created_at": "2024-01-01T00:00:00Z",
+    "hasApprovedTerms": true,
+    "role": "ADMIN"
+  },
+  {
+    "id": 2,
+    "username": "user2",
+    "avatar_img": "https://example.com/avatar2.jpg",
+    "date_of_birth": "1991-02-02",
+    "email": "user2@example.com",
+    "created_at": "2024-01-02T00:00:00Z",
+    "hasApprovedTerms": true,
+    "role": "USER"
+  },
+  {
+    "id": 3,
+    "username": "user3",
+    "avatar_img": "https://example.com/avatar3.jpg",
+    "date_of_birth": "1992-03-03",
+    "email": "user3@example.com",
+    "created_at": "2024-01-03T00:00:00Z",
+    "hasApprovedTerms": true,
+    "role": "USER"
+  },
+  {
+    "id": 4,
+    "username": "user4",
+    "avatar_img": "https://example.com/avatar4.jpg",
+    "date_of_birth": "1993-04-04",
+    "email": "user4@example.com",
+    "created_at": "2024-01-04T00:00:00Z",
+    "hasApprovedTerms": true,
+    "role": "USER"
+  },
+  {
+    "username": "user5",
+    "avatar_img": "https://example.com/avatar5.jpg",
+    "date_of_birth": "1994-05-05",
+    "email": "user5@example.com",
+    "created_at": "2024-01-05T00:00:00Z",
+    "hasApprovedTerms": true,
+    "role": "USER"
+  },
+  {
+    "id": 6,
+    "username": "user6",
+    "avatar_img": "https://example.com/avatar6.jpg",
+    "date_of_birth": "1995-06-06",
+    "email": "user6@example.com",
+    "created_at": "2024-01-06T00:00:00Z",
+    "hasApprovedTerms": true,
+    "role": "USER"
+  },
+  {
+    "id": 7,
+    "username": "user7",
+    "avatar_img": "https://example.com/avatar7.jpg",
+    "date_of_birth": "1996-07-07",
+    "email": "user7@example.com",
+    "created_at": "2024-01-07T00:00:00Z",
+    "hasApprovedTerms": true,
+    "role": "USER"
+  },
+  {
+    "id": 8,
+    "username": "user8",
+    "avatar_img": "https://example.com/avatar8.jpg",
+    "date_of_birth": "1997-08-08",
+    "email": "user8@example.com",
+    "created_at": "2024-01-08T00:00:00Z",
+    "hasApprovedTerms": true,
+    "role": "USER"
+  },
+  {
+    "id": 9,
+    "username": "user9",
+    "avatar_img": "https://example.com/avatar9.jpg",
+    "date_of_birth": "1998-09-09",
+    "email": "user9@example.com",
+    "created_at": "2024-01-09T00:00:00Z",
+    "hasApprovedTerms": true,
+    "role": "USER"
+  },
+  {
+    "id": 10,
+    "username": "user10",
+    "avatar_img": "https://example.com/avatar10.jpg",
+    "date_of_birth": "1999-10-10",
+    "email": "user10@example.com",
+    "created_at": "2024-01-10T00:00:00Z",
+    "hasApprovedTerms": true,
+    "role": "USER"
+  }
+]
