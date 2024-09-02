@@ -1,4 +1,6 @@
-import Image from "next/image"; // Import the correct component for the Image element
+// Import the correct component for the Image element
+import { ThemeProvider } from "@/components/theme-provider";
+import Image from "next/image";
 
 export default function RootLayout({
   children,
@@ -11,5 +13,16 @@ export default function RootLayout({
     email: "contact@gmail.com",
   };
 
-  return <main className="flex h-screen w-full font-inter">{children}</main>;
+  return (
+    <main className="flex h-screen w-full font-inter">
+      <ThemeProvider
+        attribute="class"
+        defaultTheme="system"
+        enableSystem
+        disableTransitionOnChange
+      >
+        {children}
+      </ThemeProvider>
+    </main>
+  );
 }
