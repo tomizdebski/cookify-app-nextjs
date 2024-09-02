@@ -1,3 +1,6 @@
+import TestShadUI from "@/components/TestShadUI";
+import { Button } from "@/components/ui/button";
+
 const Home = () => {
   const loggedIn = {
     firstName: "Tomas",
@@ -6,11 +9,15 @@ const Home = () => {
   };
 
   return (
-    <section className="home">
-      <div className="home-content">
-        <header className="home-header"></header>
+    <section className="">
+      <div className="">
+        <header className="text-red-500">header</header>
       </div>
-      rightSidebar
+      <p className="">Sidebar</p>
+      <Button className="rounded-full" variant="outline">
+        Click me
+      </Button>
+      <TestShadUI />
     </section>
   );
 };

@@ -1,7 +1,7 @@
 {
   "compilerOptions": {
     "target": "ES2020",
-    "module": "CommonJS",
+    "module": "preserve", // or "es2015" or later
     "outDir": "./dist",
     "strict": true,
     "esModuleInterop": true,
@@ -12,7 +12,7 @@
 
     "noEmit": true,
 
-    "moduleResolution": "bundler",
+    "moduleResolution": "node",
     "resolveJsonModule": true,
     "isolatedModules": true,
     "jsx": "preserve",
