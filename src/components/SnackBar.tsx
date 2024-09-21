@@ -2,8 +2,8 @@
 
 const SnackBar = () => {
   return (
-    <header className=" bg-[#4058a0] py-4 px-6">
-      <ul className="mx-auto flex justify-between items-center px-4">
+    <header className=" bg-[#4058a0] px-6 py-6 mx-auto">
+      <ul className="container flex justify-between items-center px-6 mx-auto">
         <li>
           <span className="text-white">Worlds&apos;s</span>
           <span className="text-[#dee21b] "> #1 Trusted Recipe Resource</span>

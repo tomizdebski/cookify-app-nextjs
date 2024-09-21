@@ -1,3 +1,5 @@
+import BigCardRecipe from "./BigCardRecipe";
+import NewsSidebar from "./NewsSidebar";
 import RecipeCard from "./RecipeCard";
 import { Recipes } from "@prisma/client";
 import React from "react";
@@ -16,12 +18,13 @@ const recipe_test: Recipes = {
 
 const TopOfPage = () => {
   return (
-    <div className="flex justify-between items-center mb-8 px-6 py-4 mx-auto">
-      <RecipeCard
-        isMyRecipe={false}
+    <div className="grid lg:grid-cols-[2fr_1fr] gap-4 justify-between items-start mb-8 px-6 py-6 mx-auto">
+      <BigCardRecipe
+        isMyRecipe={true}
         isSavedRecipe={true}
         recipe={recipe_test}
       />
+      <NewsSidebar />
     </div>
   );
 };
