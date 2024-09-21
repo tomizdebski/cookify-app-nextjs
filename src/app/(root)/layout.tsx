@@ -1,5 +1,7 @@
 // Import the correct component for the Image element
+import Header from "@/components/Header";
 import { ThemeProvider } from "@/components/theme-provider";
+import { ClerkProvider } from "@clerk/nextjs";
 import Image from "next/image";
 
 export default function RootLayout({
@@ -14,15 +16,18 @@ export default function RootLayout({
   };
 
   return (
-    <main className="flex h-screen w-full font-inter">
-      <ThemeProvider
-        attribute="class"
-        defaultTheme="system"
-        enableSystem
-        disableTransitionOnChange
-      >
-        {children}
-      </ThemeProvider>
+    <main className="min-h-screen bg-gray-100 dark:bg-slate-600 w-full">
+      <ClerkProvider>
+        <ThemeProvider
+          attribute="class"
+          defaultTheme="system"
+          enableSystem
+          disableTransitionOnChange
+        >
+          <Header />
+          {children}
+        </ThemeProvider>
+      </ClerkProvider>
     </main>
   );
 }

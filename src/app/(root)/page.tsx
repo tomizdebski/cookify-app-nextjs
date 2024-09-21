@@ -1,7 +1,11 @@
-import TestShadUI from "@/components/TestShadUI";
+import Header from "@/components/Header";
+import SearchZone from "@/components/SearchZone";
+import SnackBar from "@/components/SnackBar";
 import { Button } from "@/components/ui/button";
+import { SearchParams } from "@/types/type";
+import { FC } from "react";
 
-const Home = () => {
+const Home: FC<{ searchParams: SearchParams }> = ({ searchParams }) => {
   const loggedIn = {
     firstName: "Tomas",
     lastName: "Garcia",
@@ -9,15 +13,16 @@ const Home = () => {
   };
 
   return (
-    <section className="">
-      <div className="">
-        <header className="text-red-500">header</header>
+    <section>
+      <div className="container mx-auto px-0 ">
+        <SearchZone
+          path="/"
+          searchValue={searchParams.searchText}
+          sortValue={searchParams.sortBy}
+        />
       </div>
-      <p className="">Sidebar</p>
-      <Button className="rounded-full" variant="outline">
-        Click me
-      </Button>
-      <TestShadUI />
+
+      <SnackBar />
     </section>
   );
 };
