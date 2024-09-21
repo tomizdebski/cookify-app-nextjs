@@ -1,6 +1,7 @@
 "use client";
 
 import { sortMethods } from "@/app/constants/recipe.constant";
+import { Search } from "lucide-react";
 import { useRouter } from "next/navigation";
 import React, { FC, useState } from "react";
 
@@ -13,7 +14,7 @@ const SearchZone: FC<{
   const [searchText, setSearchText] = useState(searchValue || "");
 
   return (
-    <div className=" flex justify-between items-center mb-8 px-6">
+    <div className=" flex justify-between items-center mb-8 px-6 bg-[#faf3e0] dark:bg-gray-800 w-full ">
       <div className="flex items-center  rounded-md">
         <input
           type="text"
@@ -30,7 +31,7 @@ const SearchZone: FC<{
             }
           }}
         >
-          Search
+          <Search size={24} className="" />
         </button>
       </div>
       <div className="flex items-center space-x-4">

@@ -12,6 +12,7 @@ import {
   SignInButton,
   useUser,
 } from "@clerk/nextjs";
+import { Menu } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
 import { useState } from "react";
@@ -30,28 +31,30 @@ const Header = () => {
   });
 
   return (
-    <header className="bg-gradient-to-r  py-4 ">
+    <header className="bg-[#faf3e0] dark:bg-gray-800 w-full py-4 ">
       <div className="container mx-auto flex justify-between items-center px-4">
-        <Link href="/" className="text-3xl font-bold text-white">
-          <Image
-            src={assets.logo_header}
-            alt="Cookify"
-            width={150}
-            height={150}
-            className="cursor-pointer lg:block hidden"
-          />
-          <Image
-            src={assets.logo}
-            alt="Cookify"
-            width={50}
-            height={50}
-            className="cursor-pointer lg:hidden "
-          />
-        </Link>
-
+        <Menu size={32} className="cursor-pointer lg:hidden text-bray-900" />
+        <div className="flex gap-4 justify-center items-center ">
+          <Link href="/" className="text-3xl font-bold text-white">
+            <Image
+              src={assets.logo_header}
+              alt="Cookify"
+              width={150}
+              height={150}
+              className="cursor-pointer lg:block hidden"
+            />
+            <Image
+              src={assets.logo}
+              alt="Cookify"
+              width={50}
+              height={50}
+              className="cursor-pointer lg:hidden "
+            />
+          </Link>
+        </div>
         <nav>
           <ul className="flex space-x-8 items-center">
-            <li>
+            <li className="relative hidden lg:block">
               <Link
                 href="/recipes/create-edit"
                 className=" items-center  transitions-colors duration-300"
@@ -59,7 +62,7 @@ const Header = () => {
                 New Recipe
               </Link>
             </li>
-            <li className="relative" ref={categoryMenuOpenRef}>
+            <li className="relative hidden lg:block" ref={categoryMenuOpenRef}>
               <button
                 className=" items-center  transitions-colors duration-300"
                 onClick={() => setCategoryMenuOpen(!categoryMenuOpen)}
@@ -81,7 +84,7 @@ const Header = () => {
             </li>
 
             {user.isSignedIn && (
-              <li className="relative" ref={recipeMenuOpenRef}>
+              <li className="relative hidden lg:block" ref={recipeMenuOpenRef}>
                 <button
                   className=" items-center  transitions-colors duration-300"
                   onClick={() => setRecipeMenuOpen(!recipeMenuOpen)}
@@ -96,13 +99,14 @@ const Header = () => {
                   <li className="px-4 py-2 ">
                     <Link href="/recipes/my/all">Main</Link>
                   </li>
-                  <li className="px-4 py-2 text-black">
+                  <li className="px-4 py-2 text-black ">
                     <Link href="/recipes/my/saved">Saved</Link>
                   </li>
                 </ul>
               </li>
             )}
-            <li>
+
+            <li className="hidden lg:block">
               <ModeToggle />
             </li>
 

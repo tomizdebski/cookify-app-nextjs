@@ -16,7 +16,7 @@ export default function RootLayout({
   };
 
   return (
-    <main className="min-h-screen bg-gray-100 dark:bg-gray-800 w-full">
+    <main className="min-h-screen bg-[#faf3e0] dark:bg-gray-800 w-full">
       <ClerkProvider>
         <ThemeProvider
           attribute="class"
