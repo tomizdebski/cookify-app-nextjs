@@ -12,7 +12,7 @@ import {
   SignInButton,
   useUser,
 } from "@clerk/nextjs";
-import { Menu } from "lucide-react";
+import { LogIn, Menu } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
 import { useState } from "react";
@@ -31,7 +31,7 @@ const Header = () => {
   });
 
   return (
-    <header className="bg-[#faf3e0] dark:bg-gray-800 w-full py-4 ">
+    <header className="bg-white dark:bg-gray-800 w-full py-4 ">
       <div className="container mx-auto flex justify-between items-center px-4">
         <Menu size={32} className="cursor-pointer lg:hidden text-bray-900" />
         <div className="flex gap-4 justify-center items-center ">
@@ -114,7 +114,7 @@ const Header = () => {
               <SignedOut>
                 <SignInButton>
                   <button className=" items-center text-black transitions-colors duration-300">
-                    Sign In
+                    <LogIn size={24} className="dark:text-white" />
                   </button>
                 </SignInButton>
               </SignedOut>

@@ -14,8 +14,8 @@ const SearchZone: FC<{
   const [searchText, setSearchText] = useState(searchValue || "");
 
   return (
-    <div className=" flex justify-between items-center mb-8 px-6 bg-[#faf3e0] dark:bg-gray-800 w-full ">
-      <div className="flex items-center  rounded-md">
+    <div className=" flex justify-between items-center mb-8 px-6 bg-white dark:bg-gray-800 w-full ">
+      <div className="flex items-center  rounded-md ">
         <input
           type="text"
           placeholder="Search with title"
@@ -35,9 +35,9 @@ const SearchZone: FC<{
         </button>
       </div>
       <div className="flex items-center space-x-4">
-        <span className=" font-semibold text-gray-800">Sort By:</span>
+        <span className=" font-semibold text-gray-800 ">Sort:</span>
         <select
-          className="py-2 px-4 border border-gray-300 rounded-md focus:outline-none focus:border-[#ff8261] text-black dark:bg-[#f8f9d1]"
+          className="py-2 px-6 border border-gray-300 rounded-md focus:outline-none focus:border-[#ff8261] text-black dark:bg-[#f8f9d1] w-full"
           onChange={(e) => {
             if (e.target.value)
               router.push(`${path || "/"}?sortBy=${e.target.value}`);
