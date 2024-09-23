@@ -25,7 +25,7 @@ const RecipeCard: FC<{
   //   };
   return (
     <Link legacyBehavior scroll={false} href={`/recipes/${recipe.id}`}>
-      <div className="bg-white shadow-md rounded-lg overflow-hidden cursor-pointer hover:shadow-lg">
+      <div className="bg-white shadow-md  overflow-hidden cursor-pointer hover:shadow-lg">
         <img
           src={recipe.img_url}
           alt={recipe.description}
