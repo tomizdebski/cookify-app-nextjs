@@ -27,7 +27,7 @@ const BigCardRecipe: FC<{
     <Link legacyBehavior scroll={false} href={`/recipes/${recipe.id}`}>
       <div className="   overflow-hidden cursor-pointer hover:shadow-lg w-full h-auto">
         <img
-          src={recipe.img_url}
+          src={recipe.img_url || ""}
           alt={recipe.description}
           className="w-full h-auto object-cover object-center"
         />
