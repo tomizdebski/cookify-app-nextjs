@@ -46,15 +46,17 @@ const SearchZone: FC<{
           defaultValue={sortValue || ""}
         >
           <option value="">Sort By</option>
-          {Object.entries(sortMethods).map(([methodName, methodValue]) => (
-            <option
-              value={methodName}
-              key={methodName}
-              className="dark:bg-[#f8f9d1]"
-            >
-              {methodValue.label}
-            </option>
-          ))}
+          {Object.entries(sortMethods).map(
+            ([methodName, methodValue]: [string, any]) => (
+              <option
+                value={methodName}
+                key={methodName}
+                className="dark:bg-[#f8f9d1]"
+              >
+                {methodValue.label}
+              </option>
+            )
+          )}
         </select>
       </div>
     </div>
