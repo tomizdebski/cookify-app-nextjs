@@ -1,5 +1,6 @@
 "use client";
 
+import MobileSidebar from "./MobileSidebar";
 import { ModeToggle } from "./ModeToggle";
 import SearchZone from "./SearchZone";
 import { assets } from "@/Assets/assets";
@@ -33,7 +34,7 @@ const Header = () => {
   return (
     <header className="bg-white dark:bg-gray-800 w-full py-4 ">
       <div className="container mx-auto flex justify-between items-center px-4">
-        <Menu size={32} className="cursor-pointer lg:hidden text-bray-900" />
+        <MobileSidebar />
         <div className="flex gap-4 justify-center items-center ">
           <Link href="/" className="text-3xl font-bold text-white">
             <Image
